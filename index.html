@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f647d0fcb.js" crossorigin="anonymous"></script>
+
+    <!-- Gallery -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/gallery.js"></script>
+
+    <title>Masáže pro zdraví a krásu</title>
+</head>
+<body>
+    <section class="header">
+        <nav class="navigation">
+            <a href="index.html" class="logo"><img src="pics/Cisty-logo-cerny.png" alt="logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <i class="fa-solid fa-angle-right" id="menuOffIcon"></i>
+                    <li><a href="#">Úvod</a></li>
+                    <li><a href="#">Služby</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Případy z Praxe</a></li>
+                    <li><a href="#">Ceník</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </nav>
+
+        <div class="predstaveni">
+            <h1>Diplomovaný homeopat Pavla Pulcová Solaříková</h1>
+            <div class="vycetSluzeb">
+                <ul>
+                    <li>Homeopatie</li>
+                    <li>Akupunktura</li>
+                    <li>Masáže</li>
+                    <li>Tradiční čínská medicína</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="oMne">
+        <h2>Něco o mě</h2>
+        <div class="cols">
+            <div class="firstCol">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quis aperiam quas cum facere natus nemo excepturi quae quia numquam nisi neque ab voluptatum magni laudantium, delectus, vitae magnam accusantium.</p>
+            </div> 
+            <div class="secondCol">
+                <img src="pics/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg" alt="myška">
+            </div>   
+        </div> 
+        <h2>Diplomy</h2>
+        <p>Moje diplomy bla bla</p>   
+
+        <div class="container p-3">
+
+            <div class="fg-gallery">
+                <img src="pics/diplomy/cert1.jpg" alt="">
+                <img src="pics/diplomy/cert2.jpg" alt="">
+                <img src="pics/diplomy/cert3.jpg" alt="">
+                <img src="pics/diplomy/cert4.jpg" alt="">
+                <img src="pics/diplomy/cert5.jpg" alt="">
+            </div>
+        </div>
+
+        <h2>Novinka</h2>
+        <p>Vojenská zdravotní pojišťovna pro své klienty proplácí 500,- Kč na masáže (více informací na info@vozp.cz). Navíc si všichni klienti zdravotní pojišťovny mohou přímo v masérském saloně vyplnit formulář VoZP na proplacení masáží, který za Vás doručíme na pobočku VoZP.</p>
+    </section>
+
+    
+    <section class="footer">
+        <hr class="blackLine">
+        <div class="icon">
+            <i class="material-icons">mail</i>
+            <p>    info@masaze-zk.cz</p>
+        </div>
+        <div class="icon">
+            <i class="material-icons">local_phone</i>
+            <p>    +420 731 489 257</p>
+        </div>
+        <p id="ja">@ Matouš Vondrák</p>
+    </section>
+    <script type=text/javascript src="js/base.js"></script>
+    <script>
+        var a = new FgGallery('.fg-gallery', {
+            cols: 1,
+            style: {
+                border: '10px solid #fff',
+                height: '220px',
+                width: '150px',
+                borderRadius: '5px',
+                boxShadow: '0 2px 10px -5px #858585',
+            }
+        })
+    </script>
+</body>
+</html>
