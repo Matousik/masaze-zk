@@ -1,0 +1,58 @@
+.header {
+    min-height: 60vh;
+}
+
+
+
+
+.nadpis {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.basicInfo {
+    width: 60%;
+    
+    margin: 3rem auto;
+}
+
+/*****/
+
+.cenikTry {
+    max-width: min(900px,90%);
+    margin: 3em auto;
+}
+
+.cenikTry h3 {
+    font-size: clamp(1rem, 5vw, 1.1rem);
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+}
+
+.PravaStrana span {
+    margin-right: 1rem;
+    font-size: clamp(0.6rem, 5vw, 0.8rem);
+}
+
+.PravaStrana {
+    margin-left: auto;
+}
+
+.cenikTry p {
+    font-size: clamp(0.5rem, 5vw, 0.8rem);
+    line-height: 1rem;
+    margin: 1.5em 0;
+    color: rgb(141, 140, 140);
+    letter-spacing: 0.1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prvek {
+    margin: 1.5em 0;
+}

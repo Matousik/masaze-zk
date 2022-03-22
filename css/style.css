@@ -5,20 +5,30 @@
     font-size: 20px;
     letter-spacing: 0.15rem;
     color: rgb(53, 53, 53);
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 h2 {
-    font-size: 40px;
+    font-weight: 300;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 10vw, 2rem);
     font-weight: 300;
 }
 
 p {
     
     line-height: 1.6rem;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /* prvni oddil */
@@ -29,7 +39,6 @@ p {
     background-image: url(../pics/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg);
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 
 /* horni menu */
@@ -132,13 +141,21 @@ p {
         right: 30px;
         font-size: 40px;
     }
+
+    .logo img {
+        width: max(25vw,200px);
+        margin-top: 45%;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
     
 }
 
 /* predstaveni */
 
 .predstaveni {
-    position: absolute;
     top: 20rem;
     left: 10%;
     width: 40rem;
@@ -228,9 +245,12 @@ p {
 
  /* footer */
 
- hr.blackLine {
-    margin: 2rem 1rem;
-    border-top: 0.01rem solid rgb(0, 0, 0);
+ hr {
+    margin: 0 auto;
+    width: 90%;
+    border: none;
+    border-top: 1px solid black;
+    height: 1px;
  }
 
  .icon {

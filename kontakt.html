@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/kontakt.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f647d0fcb.js" crossorigin="anonymous"></script>
+
+    <!-- Gallery -->
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/gallery.js"></script>
+
+     <!-- Mapy.cz API -->
+
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+     <script src="js/googlemaps.js"></script>
+
+    <title>Masáže pro zdraví a krásu</title>
+</head>
+<body>
+    <section class="header">
+        <nav class="navigation">
+            <a href="index.html" class="logo"><img src="pics/Cisty-logo-cerny.png" alt="logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <i class="fa-solid fa-angle-right" id="menuOffIcon"></i>
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="sluzby.html">Služby</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="#">Případy z Praxe</a></li>
+                    <li><a href="cenik.html">Ceník</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </nav>
+
+        <div class="nadpis">
+            <h1>Kontakt</h1>
+        </div>
+    </section>
+    
+    <section class="kontakt">
+        <div class="basicInfo">
+            <h2>Kontaktní informace</h3>
+            <div class="boxInfo">
+                <div class="icon">
+                    <i class="material-icons">mail</i>
+                    <p>    info@masaze-zk.cz</p>
+                </div>
+            </div>
+            <div class="boxInfo">
+                <div class="icon">
+                    <i class="material-icons">local_phone</i>
+                    <p>    +420 731 489 257</p>
+                </div>
+            </div>
+        </div>
+        <div class="provozovny">
+            <div class="provozovna">
+                <h3>Libochovice</h3>
+                <p>Otevírací doba: Pátek</p>
+                <div class="obrazeksmapou">
+                    <div class="sloupec1">
+                        <img src="pics/provozovny/libo.jpg" alt="Provozovna Libochovice">
+                    </div>
+                    <div class="sloupec2">
+                        <div id="map1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="provozovna">
+                <h3>Ústí nad Labem</h3>
+                <p>Otevírací doba: Pondělí - Čtvrtek </p>
+                <div class="obrazeksmapou">
+                    <div class="sloupec1">
+                        <img src="pics/provozovny/usti.jpg" alt="Provozovna Ústí nad Labem">
+                    </div>
+                    <div class="sloupec2">
+                        <div id="map2"></div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    
+    <section class="footer">
+        <hr class="blackLine">
+        <div class="icon">
+            <i class="material-icons">mail</i>
+            <p>    info@masaze-zk.cz</p>
+        </div>
+        <div class="icon">
+            <i class="material-icons">local_phone</i>
+            <p>    +420 731 489 257</p>
+        </div>
+        <p id="ja">@ Matouš Vondrák</p>
+    </section>
+    <script type=text/javascript src="js/base.js"></script>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDECvz0CMS7ZaOnfDqcsURg8GnHLjTOVjk&callback=initMap&v=weekly"
+    async
+  ></script>
+    
+</body>
+</html>
