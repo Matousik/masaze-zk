@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/sluzby.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f647d0fcb.js" crossorigin="anonymous"></script>
+
+    <!-- Gallery -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/gallery.js"></script>
+
+    <title>Masáže pro zdraví a krásu</title>
+</head>
+<body>
+    <section class="header">
+        <nav class="navigation">
+            <a href="index.html" class="logo"><img src="pics/Cisty-logo-cerny.png" alt="logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <i class="fa-solid fa-angle-right" id="menuOffIcon"></i>
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="sluzby.html">Služby</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="#">Případy z Praxe</a></li>
+                    <li><a href="cenik">Ceník</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </nav>
+
+        <div class="nadpis">
+            <h1>Služby</h1>
+        </div>
+    </section>
+    
+    <section class="sluzby">
+        <div class="buttonGrid">
+            <a href="#">
+                <button class="basicButton">Homeopatie - poradenství</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">tradiční čínská medicína</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">lymfatická masáž</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">relaxační masáže</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">masáž lávovými kameny z fiji</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">program modeling</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">regenerační masáže</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">autopatie poradenství</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">iridologie</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">diagnostika z jazyka</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">reflexní terapie</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">masáž podle breusse</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">baňkování</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">moxování</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">fytoterapie</button>
+            </a>
+            <a href="#">
+                <button class="basicButton">léčebná pyramida</button>
+            </a>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <hr class="blackLine">
+        <div class="icon">
+            <i class="material-icons">mail</i>
+            <p>    info@masaze-zk.cz</p>
+        </div>
+        <div class="icon">
+            <i class="material-icons">local_phone</i>
+            <p>    +420 731 489 257</p>
+        </div>
+        <p id="ja">@ Matouš Vondrák</p>
+    </section>
+    <script type=text/javascript src="js/base.js"></script>
+    <script>
+        var a = new FgGallery('.fg-gallery', {
+            cols: 1,
+            style: {
+                border: '10px solid #fff',
+                height: '220px',
+                width: '150px',
+                borderRadius: '5px',
+                boxShadow: '0 2px 10px -5px #858585',
+            }
+        })
+    </script>
+</body>
+</html>
