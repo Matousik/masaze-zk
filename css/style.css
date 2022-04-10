@@ -9,8 +9,10 @@
 }
 
 h1 {
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: 300;
 }
+
 
 h2 {
     font-weight: 300;
@@ -18,17 +20,31 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(1.5rem, 10vw, 2rem);
+    font-size: clamp(1.3rem, 10vw, 1.8rem);
     font-weight: 300;
 }
 
 p {
-    
+    font-size: clamp(15px, 4vw, 20px);
     line-height: 1.6rem;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .underline {
     text-decoration: underline;
+}
+
+.blokTextu {
+    margin: 1rem auto;
+    max-width: min(95%,1200px);
+}
+
+.blokTextu h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 /* prvni oddil */
@@ -36,9 +52,16 @@ p {
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: url(../pics/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg);
+    background-image: url(../pics/DSC05902cut.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:800px) {
+    .header {
+        background-position-x: 70%;
+    }
 }
 
 /* horni menu */
@@ -57,7 +80,11 @@ p {
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(0deg, rgba(192, 192, 192, 0) 0%, rgba(139, 139, 139, 0.4) 35%, rgba(31,31,31,0.6) 100%);
+    
 }
+
+
 
 .nav-links ul {
     display: flex;
@@ -73,7 +100,7 @@ p {
 
 .nav-links ul li a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 200;
     letter-spacing: 0.2rem;
 }
@@ -82,7 +109,7 @@ p {
     content: '';
     width: 0;
     height: 1px;
-    background: rgb(24, 24, 24);
+    background: rgb(255, 255, 255);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -107,6 +134,7 @@ p {
 
     .nav-links ul li a {
         line-height: 1rem;
+        color: black;
     }
 
     .nav-links {
@@ -140,6 +168,7 @@ p {
         top: 30px;
         right: 30px;
         font-size: 40px;
+        color: aliceblue;
     }
 
     .logo img {
@@ -157,23 +186,23 @@ p {
 
 .predstaveni {
     top: 20rem;
-    left: 10%;
-    width: 40rem;
-    height: 20rem;
-    border-radius: 2rem;
+    margin-left: 10%;
+    width: 30rem;
+    padding-bottom: 1rem;
+    min-height: 15rem;
     background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(4,0,59,0.4) 35%, rgba(31,31,31,0.4) 100%);
 }
 
 .predstaveni h1 {
     text-align: center;
+    padding-top: 1rem;
     font-weight: 400;
-    margin-top: 2rem;
     color: aliceblue;
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: clamp(1.3rem, 5vw, 2rem);
 }
 
 .vycetSluzeb {
-    margin-left: 5rem;
+    margin-left: 7%;
     margin-top: 2rem;
 }
 
@@ -185,15 +214,27 @@ p {
 .vycetSluzeb ul li {
     text-decoration: none;
     color: aliceblue;
+
 }
 
 @media (max-width:1100px) {
 
     .predstaveni {
         width: auto;
-        right: 10%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-right: 10%;
+    }
+
+    .vycetSluzeb {
+        text-align: center;
+       margin-left: 0;
+    }
+
+    .vycetSluzeb ul {
+        margin: 0 auto;
+    }
+
+    .vycetSluzeb ul li {
+        font-size: clamp(15px, 5vw, 20px);
     }
 
 
@@ -203,7 +244,7 @@ p {
 /* něco o mě */
 
 .oMne {
-    width: 70%;
+    max-width: min(1000px,95%);
     margin: 0 auto;
 }
 
@@ -212,41 +253,55 @@ p {
 }
 
 .cols {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-@media (max-width:1100px) {
-
-    .cols {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
 }
 
 .oMne h2 {
     margin: 3rem 0;
 }
 
-.secondCol img {
-    width: 300px;
+.oMne p {
+    text-align: justify;
+}
+
+@media (max-width:600px) {
+    .oMne p {
+        text-align: left;
+    }
 }
 
 .secondCol, .firstCol{
     display: flex;
     align-items: center;
+    max-width: 500px;
 }
 
 .secondCol {
     justify-content: center;
  }
 
+#oMneObrazek {
+    width: min(400px,80vw);
+}
+
+/* diplomy */ 
+
+#parDiplomy {
+    text-align: center;
+}
+
  /* footer */
 
+ .footer {
+     width: 90%;
+     margin: 0 auto;
+ }
+
  hr {
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 90%;
     border: none;
     border-top: 1px solid black;
@@ -261,6 +316,8 @@ p {
  .icon i {
      padding-right: 1rem;
  }
+
+
 
  #ja {
      text-align: center;

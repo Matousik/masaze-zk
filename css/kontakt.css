@@ -11,8 +11,8 @@
 }
 
 .basicInfo {
-    width: 60%;
-    
+    max-width: 1000px;
+    padding: 0 0.5rem;
     margin: 3rem auto;
 }
 
@@ -21,7 +21,8 @@
 }
 
 .kontakt h2 {
-    font-size: clamp(1.8rem, 5vw, 2rem);
+    font-size: clamp(1.3rem, 5vw, 1.5rem);
+    margin-bottom: 1.5rem;
 }
 
 .kontakt .icon {
@@ -29,7 +30,7 @@
 }
 
 .provozovny {
-    width: 90%;
+    max-width: 1050px;
     margin: 5rem auto;
     display: flex;
     flex-direction: column;

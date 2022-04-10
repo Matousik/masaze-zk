@@ -1,8 +1,13 @@
 /* GALLERY ITEMS */
-.container {
-    padding-left: auto;
-    padding-right: auto;
+.container {}
+
+.fg-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem auto;
 }
+
 
 .fg-gallery:after {
     content: "";
