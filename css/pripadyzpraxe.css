@@ -1,0 +1,67 @@
+.header {
+    min-height: 60vh;
+}
+
+
+
+
+.nadpis {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.basicInfo {
+    width: 60%;
+    
+    margin: 3rem auto;
+}
+
+/* případy z praxe */
+
+.pripad {
+    max-width: min(1000px, 95%);
+    margin: 2rem auto;
+}
+
+.pripad h3 {
+    margin: 2rem 0;
+}
+
+.pripad p {
+    margin: 1rem 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* border */
+
+.separatorRight{
+    width:100%;
+    margin:3rem auto;
+}
+
+.separatorRight:after{
+    content:'';
+    display:block;
+    border-right: 100vw solid rgb(196, 190, 190);
+    border-top: 30px solid transparent;
+    border-left:0;
+    border-bottom:0;
+}
+
+.separatorLeft{
+    width:100%;
+    margin:3rem auto;
+}
+
+.separatorLeft:after{
+    content:'';
+    display:block;
+    border-left: 100vw solid rgb(196, 190, 190);
+    border-top: 30px solid transparent;
+    border-right:0;
+    border-bottom:0;
+}

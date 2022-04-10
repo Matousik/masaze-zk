@@ -44,6 +44,13 @@
     margin: 1.5em 0;
     color: rgb(141, 140, 140);
     letter-spacing: 0.1rem;
+    text-align: justify;
+}
+
+@media (max-width:600px) {
+    .cenikTry p {
+        text-align: left;
+    }
 }
 
 .row {

@@ -1,0 +1,117 @@
+.header {
+    min-height: 60vh;
+}
+
+
+
+
+.nadpis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 7px rgba(236,236,236,1), 0px 0px 7px rgba(236,236,236,1), -2px -2px 7px rgba(236,236,236,1);
+    
+}
+
+
+
+
+.basicInfo {
+    width: 60%;
+    
+    margin: 3rem auto;
+}
+
+/* případy z praxe */
+
+.sluzbaTextBlok {
+    max-width: min(1000px, 95%);
+    margin: 2rem auto;
+}
+
+.sluzbaTextBlok h3 {
+    margin: 4rem 0;
+}
+
+.sluzbaTextBlok p {
+    margin: 1rem 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sluzbaTextBlok ul{
+    margin-left: 5%;
+}
+
+.sluzbaTextBlok ul li {
+    margin-bottom: 1rem;
+}
+
+/* border */
+
+.separatorRight{
+    width:100%;
+    margin-bottom: -10vw;
+    z-index: 100;
+}
+
+.separatorRight:after{
+    content:'';
+    display:block;
+    border-right: 100vw solid rgb(255, 255, 255);
+    border-top: 1vw solid transparent;;
+    border-left:0;
+    border-bottom: 5vw solid transparent;
+    z-index: 100;
+}
+
+.separatorLeft{
+    width:100%;
+    margin-top: -10vw;
+}
+
+.separatorLeft:after{
+    content:'';
+    display:block;
+    border-left: 100vw solid rgb(255, 255, 255);
+    border-top: 5vw solid transparent;
+    border-right:0;
+    border-bottom: 1vw solid transparent;
+}
+
+/* images */
+
+.velkyObrazek {
+    max-width: min(900px,95%);
+}
+
+.stredniObrazek {
+    max-width: min(600px,95%);
+}
+
+.malyObrazek {
+    max-width: min(400px,95%);
+}
+
+/* interImg */
+
+.interImg {
+    max-height: 800px;
+    overflow: hidden;
+    z-index: -100;
+    margin: 5vw 0;
+}
+
+.interImg img {
+    width: 100%;
+    position: sticky;
+    z-index: -100;
+    
+    
+    
+}
