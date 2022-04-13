@@ -27,6 +27,8 @@
     font-size: clamp(1rem, 5vw, 1.1rem);
     font-weight: 600;
     letter-spacing: 0.15rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
 }
 
 .PravaStrana span {
