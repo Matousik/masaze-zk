@@ -46,6 +46,7 @@
 
 .sluzbaTextBlok ul{
     margin-left: 5%;
+    line-height: 1.6rem;
 }
 
 .sluzbaTextBlok ul li {
@@ -110,8 +111,33 @@
 .interImg img {
     width: 100%;
     position: sticky;
-    z-index: -100;
-    
-    
-    
+    z-index: -100;    
 }
+
+/* img caption */ 
+
+.popisObrazku {
+    color: rgb(141, 141, 141);
+    font-size: clamp(13px, 4vw, 17px);
+    text-align: center;
+}
+
+/* ul and pics next to each other */
+
+.ulAObrazek {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.ulAObrazek ul {
+    max-width: 600px;
+}
+
+.iridologieIris {
+    width: min(300px, 100%);
+}
+
