@@ -13,25 +13,48 @@
 }
 
 h1 {
-    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-size: 2.5rem;
     font-weight: 300;
 }
 
 
 h2 {
     font-weight: 300;
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: clamp(1.3rem, 10vw, 1.8rem);
+    font-size: 1.8rem;
     font-weight: 300;
 }
 
-p {
-    font-size: clamp(15px, 4vw, 20px);
+p, li {
+    font-size: 1rem;
     line-height: 1.6rem;
 }
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p, li {
+        font-size: 0.8rem;
+    }
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
 
 .italic {
     font-style: italic;
@@ -73,6 +96,7 @@ p {
 .logo img {
     width: 12em;
     transition: 0.5s;
+    margin-bottom: 1rem;
 }
 
 .navigation #menuIcon, nav #menuOffIcon {
