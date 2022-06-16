@@ -48,6 +48,8 @@ p, li {
 
     p, li {
         font-size: 0.8rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.07rem;
     }
 }
 
@@ -79,7 +81,7 @@ ul li {
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: url(../pics/DSC05902cut.jpg);
+    background-image: url(../pics/pavla-s-myskou-cut.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -273,7 +275,7 @@ ul li {
 /* něco o mě */
 
 .oMne {
-    max-width: min(1000px,95%);
+    max-width: min(1200px,100%);
     margin: 0 auto;
 }
 
@@ -299,6 +301,8 @@ ul li {
 @media (max-width:600px) {
     .oMne p {
         text-align: left;
+        max-width: 95%;
+        margin: 0 auto;
     }
 }
 
@@ -313,7 +317,7 @@ ul li {
  }
 
 #oMneObrazek {
-    width: min(400px,80vw);
+    width: min(500px,100vw);
 }
 
 /* diplomy */ 
