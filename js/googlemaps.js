@@ -19,17 +19,4 @@ function initMap() {
         });
     
         marker1.setMap(map2);
-
-    map1 = new google.maps.Map(document.getElementById("map1"), {
-        center: LatLng1,
-        zoom: 15,
-        });
-
-    var marker2 = new google.maps.Marker({
-        position: LatLng1,
-        map1,
-        title: "Provozovna Libochovice",
-        });    
-
-        marker2.setMap(map1);
 }

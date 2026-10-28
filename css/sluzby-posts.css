@@ -1,5 +1,5 @@
 .header {
-    min-height: 70vh;
+    min-height: 75vh;
 }
 
 
@@ -10,9 +10,21 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 2rem;
+    padding: 1rem;
     text-shadow: 2px 2px 7px rgba(236,236,236,1), 0px 0px 7px rgba(236,236,236,1), -2px -2px 7px rgba(236,236,236,1);
     
+}
+
+.nadpis-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.white {
+    color: aliceblue;
 }
 
 
@@ -93,6 +105,16 @@
 
 .malyObrazek {
     max-width: min(400px,95%);
+}
+
+.obrazekStred {
+    text-align: center;
+}
+
+figure figcaption, .popisObrazku {
+    color: rgb(141, 141, 141);
+    font-size: clamp(13px, 4vw, 17px);
+    text-align: center;
 }
 
 /* interImg */
