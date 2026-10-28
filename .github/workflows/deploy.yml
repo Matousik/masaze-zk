@@ -1,0 +1,46 @@
+name: Nasazení webu na Wedos
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Stáhnout zdrojové kódy
+        uses: actions/checkout@v4
+
+      - name: Vložit Google Maps API klíč do kontakt.html
+        env:
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+        run: |
+          if [ -z "$GOOGLE_MAPS_API_KEY" ]; then
+            echo "Chybí secret GOOGLE_MAPS_API_KEY" >&2
+            exit 1
+          fi
+          sed -i "s|YOUR_GOOGLE_MAPS_API_KEY|$GOOGLE_MAPS_API_KEY|g" kontakt.html
+          if grep -q "YOUR_GOOGLE_MAPS_API_KEY" kontakt.html; then
+            echo "Zástupný text se nepodařilo nahradit" >&2
+            exit 1
+          fi
+
+      - name: Nahrát soubory přes FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 303404.w4.wedos.net
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          local-dir: ./
+          server-dir: /www/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.DS_Store
